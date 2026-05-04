@@ -1,0 +1,17 @@
+.home {
+  padding: 20px;
+}
+
+.anime-grid {
+   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.genre-buttons {
+  margin-bottom: 15px;
+}
+
+.genre-buttons button {
+  margin-right: 10px;
+  cursor: pointer;
+}
