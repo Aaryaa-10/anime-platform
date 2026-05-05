@@ -20,7 +20,7 @@ router.get("/search", searchAnime);
 router.get("/details/:id", getAnimeDetails);
 
 
-router.get("/recommendations", authMiddleware, getRecommendations);
+router.get("/recommendations", getRecommendations);
 
 router.post("/watchlist", authMiddleware, addToWatchlist);
 router.delete("/watchlist/:animeId", authMiddleware, removeFromWatchlist);

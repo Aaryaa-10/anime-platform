@@ -28,9 +28,13 @@ const Watchlist = () => {
     }
   };
 
-  useEffect(() => {
+ useEffect(() => {
+  const token = localStorage.getItem("token");
+
+  if (token) {
     fetchWatchlist();
-  }, []);
+  }
+}, []);
 
   return (
     <div className="home">
